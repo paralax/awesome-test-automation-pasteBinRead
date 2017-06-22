@@ -1,6 +1,6 @@
 # Test automation and software testing as services
 
-A comprehensive curated list of test automation and software testing as online services to help software engineers easily bootstrap test automation and software testing.
+A comprehensive curated list of test automation and software testing as online services to help software engineers easily bootstrap test automation and software testing. Sponsored by http://sdclabs.com
 
 [![Have questions\issues\problems, join the chat at https://gitter.im/atinfo/awesome-test-automation](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atinfo/awesome-test-automation)
 
@@ -14,26 +14,37 @@ Table of content:
 Also:
 
 - [Resources](#resources)
-- [Other Awesome Test Automation Lists](#other-awesome-lists)
+- [Other Awesome Test Automation Lists](#other-awesome-test-automation-lists)
 - [Contributing](#contributing)
 
 ---
 
 ## Web test automation and testing
 
-* [saucelabs](https://saucelabs.com/) - Provides the world's largest automation cloud for testing web and native/hybrid mobile applications. Founded by the original creator of Selenium, Sauce Labs helps companies accelerate software development cycles, improve application quality and deploy with confidence across 450+ browser / OS platforms, including Windows, Linux, iOS, Android & Mac OS X. 
+* [SauceLabs](https://saucelabs.com/) - Provides the world's largest automation cloud for testing web and native/hybrid mobile applications. Founded by the original creator of Selenium, Sauce Labs helps companies accelerate software development cycles, improve application quality and deploy with confidence across 450+ browser / OS platforms, including Windows, Linux, iOS, Android & Mac OS X. 
 * [Browserstack](http://www.browserstack.com/) - Online tool which allows users to test their website from different browsers. The list of supported browsers includes Google Chrome, Internet Explorer, Opera and Safari. This even includes different browser versions as well including the beta versions as well. With Browserstack, you can test every aspect of your website like flash, CSS, Java and more.
+* [BackTrac](http://backtrac.io/) Help organizations to keep an eye on their websites to identify broken pages fast and effortless. Automatically create a screenshots of pages and be notified about visual changes happened.
+* [AppliTools](https://applitools.com/) Automating visual software testing 
+* [CrossBrowserTesting](https://crossbrowsertesting.com/) Another one cloud platform for automated testing of web applications. Provides a wide range of browsers, systems and more. 
+* [TestAnywhere](https://testanywhere.co/) - Test Anywhere is a cloud service that helps test your website or web application continuously and catch bugs in the early stages
+* [Assertible](https://assertible.com/) - Assertible is an API and website testing service for teams and individuals. Create tests for your business logic, run them on a schedule or after deployments, and get alerted of failures as they occur.
+
+## Mobile test automation
+* [Hive CI](http://bbc.github.io/hive-ci/) is a CI system built around devices. Connect your physical devices to a hive and run your tests on the same platforms as your users
+* [Testmunk](https://testmunk.com/) automates mobile app testing
 
 ## Performance and load testing
-
 * [Loader.io](https://loader.io/) - A FREE load testing service that allows you to stress test your web-apps & apis with thousands of concurrent connections.
 * [Blitz](https://www.blitz.io/) - Performance testing on websites, web apps and REST APIs.
 * [BlazeMeter](http://blazemeter.com/) - A self- service performance & load testing cloud, 100% JMeter-compatible. Easily run tests of 30k, 50k, 80k or more concurrent users, on-demand!
 * [Loadsophia](https://loadosophia.org/) - is the service for storing and analysing performance test results. It supports analyzing output from Apache JMeter, Apache Benchmark and Yandex.Tank performance testing tools.
+* [Load Impact](https://loadimpact.com/) - Nothing to install, easy config: instant and free load testing SaaS for developers and devops.
 
 ## Security testing
-
-[Contribute to this section](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
+* [Netcraft](http://www.netcraft.com/security-testing/web-application/) - Web Application Security testing by Netcraft.
+* [WebSecurify](http://www.websecurify.com/) - One of the famous Web Application Security Scanner
+* [Hacktarget.com](https://hackertarget.com/) - Simplify the security assessment process with hosted vulnerability scanning tools.
+* [Scan My Server](https://www.scanmyserver.com/) - Free tool for Web Security scanning.
 
 ## Reporting
 
@@ -57,6 +68,13 @@ Where to discover new libraries, information, tools, etc.
 * [php test automation](https://github.com/atinfo/awesome-test-automation/blob/master/php-test-automation.md)
 * [javascript test automation](https://github.com/atinfo/awesome-test-automation/blob/master/javascript-test-automation.md)
 * [test automation and software testing as services](https://github.com/atinfo/awesome-test-automation/blob/master/automation-and-testing-as-service.md)
+* [mobile, tablet and tv test automation](https://github.com/atinfo/awesome-test-automation/blob/master/mobile-test-automation.md)
+* [general purpose test automation tools](https://github.com/atinfo/awesome-test-automation/blob/master/general-purpose-test-automation-tools.md)
+
+Also we are supporting and looking for contribution for project:
+
+* [practical test automation by examples](https://github.com/atinfo/at.info-knowledge-base)
+
 
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
-Your contributions are always welcome!
+Your contributions are always welcome! [Contribute](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)

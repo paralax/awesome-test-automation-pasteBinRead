@@ -1,6 +1,6 @@
 # PHP test automation 
 
-A comprehensive curated list of PHP test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on PHP.
+A comprehensive curated list of PHP test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on PHP. Sponsored by http://sdclabs.com
 
 [![Have questions\issues\problems, join the chat at https://gitter.im/atinfo/awesome-test-automation](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atinfo/awesome-test-automation)
 
@@ -26,7 +26,7 @@ Table of content:
 Also:
 
 - [Resources](#resources)
-- [Other Awesome Test Automation Lists](#other-awesome-lists)
+- [Other Awesome Test Automation Lists](#other-awesome-test-automation-lists)
 - [Contributing](#contributing)
 
 ---
@@ -149,6 +149,13 @@ website with reference of most frequently used QA tools
 * [php test automation](https://github.com/atinfo/awesome-test-automation/blob/master/php-test-automation.md)
 * [javascript test automation](https://github.com/atinfo/awesome-test-automation/blob/master/javascript-test-automation.md)
 * [test automation and software testing as services](https://github.com/atinfo/awesome-test-automation/blob/master/automation-and-testing-as-service.md)
+* [mobile, tablet and tv test automation](https://github.com/atinfo/awesome-test-automation/blob/master/mobile-test-automation.md)
+* [general purpose test automation tools](https://github.com/atinfo/awesome-test-automation/blob/master/general-purpose-test-automation-tools.md)
+
+Also we are supporting and looking for contribution for project:
+
+* [practical test automation by examples](https://github.com/atinfo/at.info-knowledge-base)
+
 
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
 Your contributions are always welcome!

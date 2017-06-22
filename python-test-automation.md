@@ -1,6 +1,6 @@
 # Python test automation
 
-A comprehensive curated list of python test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on python.
+A comprehensive curated list of python test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on python. Sponsored by http://sdclabs.com
 
 [![Have questions\issues\problems, join the chat at https://gitter.im/atinfo/awesome-test-automation](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atinfo/awesome-test-automation)
 
@@ -15,6 +15,7 @@ Table of content:
 - [Windows UI test automation](#windows-ui-test-automation)
 - [Unix \ Linux UI test automation](#unix--linux-ui-test-automation)
 - [MacOS UI test automation](#macos-ui-test-automation)
+- [REST API Testing](#rest-api-testing)
 - [Virtual environments](#virtual-environments)
 - [Performance & stress & load](#performance--stress--load)
 - [Security checking](#security-checking)
@@ -27,7 +28,7 @@ Table of content:
 Also:
 
 - [Resources](#resources)
-- [Other Awesome Test Automation Lists](#other-awesome-lists)
+- [Other Awesome Test Automation Lists](#other-awesome-test-automation-lists)
 - [Contributing](#contributing)
 
 ---
@@ -54,6 +55,8 @@ Also:
     * [testlib](http://www.logilab.org/project/logilab-common/) - Gives more power to standard unittest. More assert* methods; support for module level setup/teardown; skip test feature...
     * [dutest](https://pypi.python.org/pypi/dutest) - An object oriented interface to retrieve unittest test cases out of doctests. Hides initialization from doctests by allowing setUp and tearDown for each interactive example. Allows control over all the options provided by doctest. Specialized classes allow selective test discovery across a package hierarchy.
     * [green](https://github.com/CleanCut/green) - Green is a clean, colorful test runner for Python unit tests. Compare it to nose or trial.
+    * [ddt](https://github.com/txels/ddt) - Data-Driven tests with unittest
+    * [pytractor](https://github.com/kpodl/pytractor) is an extension to the Selenium bindings for Python. Its goal is to make testing of angular.js applications easier with Python.
 
 
 ## TDD \ ATDD \ BDD
@@ -65,11 +68,15 @@ Also:
     * [contexts](https://github.com/benjamin-hodgson/Contexts) - Descriptive testing for Python.
     * [mamba](http://nestorsalceda.github.io/mamba/) - The definitive testing tool for Python. Born under the banner of Behavior Driven Development.
     * [pyvows](http://heynemann.github.io/pyvows/) - Asynchronous behaviour driven development for Python.
+    * [pytest-bdd](https://github.com/pytest-dev/pytest-bdd) - BDD library for the py.test runner
     * [robotframework](http://robotframework.org/) - A generic test automation framework for acceptance testing and acceptance test-driven development (ATDD)
+        * [awesome-robotframework](https://github.com/fkromer/awesome-robotframework) - A curated list of awesome Robot Framework resources and libraries
+    * [radish-bdd](https://github.com/radish-bdd/radish) - BDD testing tool with supplements
 - Assertions
     * [pyshould](https://github.com/drslump/pyshould) - Should style asserts based on pyhamcrest.
     * [pyhamcrest](https://github.com/hamcrest/PyHamcrest) - Hamcrest matchers for Python.
     * [sure](https://github.com/gabrielfalcao/sure) - A testing library for python with powerful and flexible assertions.
+    * [assertpy](https://github.com/ActivisionGameScience/assertpy) - Dead simple assertions library for unit testing in Python with a nice fluent API. Supports both Python 2 and 3.
 - Mocking
     * [mock](https://pypi.python.org/pypi/mock) - A Python Mocking and Patching Library for Testing.
     * [Ludibrio](http://github.com/nsigustavo/ludibrio/) - Elegant test doubles framework in Python (mocks, stubs, spy, and dummies).
@@ -80,6 +87,7 @@ Also:
     * [httmock](https://github.com/patrys/httmock) - A mocking library for requests for Python 2.6+ and 3.2+.
     * [pretenders](https://github.com/pretenders/pretenders) - fake servers for testing.
     * [mock-server](https://github.com/tomashanacek/mock-server) - Simple mock server for REST and XML-RPC API with admin panel based on tornado. 
+    * [VCR.py](https://github.com/kevin1024/vcrpy) - Automatically mock your HTTP interactions to simplify and speed up testing.
 
 ## Test Data manipulation
 
@@ -88,7 +96,8 @@ Also:
 * [ForgeryPy](https://pypi.python.org/pypi/ForgeryPy) - An easy to use forged data generator for Python. It's a port of forgery.
 * [radar](https://pypi.python.org/pypi/radar) - Generate random datetime / time.
 * [robotframework-faker](https://github.com/guykisel/robotframework-faker) - Robot Framework wrapper for faker.
-* [hypothesis](https://github.com/DRMacIver/hypothesis) - Library for property based testing in Python, based on the Haskell library Quickcheck. 
+* [hypothesis](https://github.com/DRMacIver/hypothesis) - Library for property based testing in Python, based on the Haskell library Quickcheck.
+* [factory_boy](https://github.com/FactoryBoy/factory_boy) - A fixtures replacement based on thoughtbot’s [factory_girl](https://github.com/thoughtbot/factory_girl).
 
 ## Code analysis
 
@@ -98,6 +107,8 @@ Also:
 * [Flake8](https://pypi.python.org/pypi/flake8) - The modular source code checker: pep8, pyflakes and co.
 * [pylama](https://pylama.readthedocs.org/) - Code audit tool for Python and JavaScript.
 * [Pylint](http://www.pylint.org/) - A source code analyzer.
+* [hacking](https://github.com/openstack-dev/hacking) - OpenStack Hacking Style Checks (`flake8` plugins).
+* [prospector](https://github.com/landscapeio/prospector) - A tool to analyse Python code and output information about errors, potential problems, convention violations and complexity.
 
 ## Web UI test automation
 
@@ -118,7 +129,11 @@ Also:
     * [robotframework-pageobjects](https://github.com/ncbi/robotframework-pageobjects) - Nice implementation of the Page Object pattern with robotframework and selenium, that can work even outside of robotframework. More on this [blog post](http://kahunacohen.com/2014/12/03/new-testing-paradigm-robotframework-pageobjects/)
     * [elementium](https://github.com/actmd/elementium) - jQuery-style syntactic sugar for highly reliable automated browser testing in Python
     * [slickqa](http://www.slickqa.com/webdriver/python/) - The slick-webdriver-python project is a wrapper around the python webdriver client bindings.
+    * [selene](https://github.com/yashaka/selene/) - Concise UI tests in Python + Ajax support + PageObjects + Widgets
+    * [hitch](http://hitchtest.com/) - A high level integration testing framework for service based applications.
+    * [Needle](http://needle.readthedocs.org/en/latest/) - Needle is a tool for testing visuals with Selenium and nose. It checks that CSS renders correctly by taking screenshots of portions of a website and comparing them against known good screenshots. It also provides tools for testing calculated CSS values and the position of HTML elements.                                                                                                                                                                                                                     
 - extensions
+    * [webdriver_manager](https://github.com/SergeyPirogov/webdriver_manager) - The main idea is to simplify managemet of binary drivers for different browsers.
     * [pytest_splinter](https://github.com/pytest-dev/pytest-splinter) - pytest spinter and selenium integration for anyone interested in browser interaction in tests.
     * [lettuce_webdriver](https://github.com/bbangert/lettuce_webdriver) - Selenium webdriver for lettuce.
     * [Browsermob Proxy](https://github.com/AutomatedTester/browsermob-proxy-py) - A python wrapper for Browsermob Proxy.
@@ -142,6 +157,7 @@ Also:
 * [robotframework-autoitlibrary](https://code.google.com/p/robotframework-autoitlibrary/) - A Windows GUI testing library for Robot Framework
 * [autopy](https://github.com/msanders/autopy) - A simple, cross-platform GUI automation toolkit for Python.
 * [UISoup](https://pypi.python.org/pypi/UISoup/) - This library supports UI-related testing using Python on Windows and Mac OS. (Only Python x86 is supported)
+* [pywinauto](http://pywinauto.github.io/) - Very pythonic object-oriented Windows GUI automation library. Now it supports 64-bit Py2 and Py3.
 
 ## Unix \ Linux UI test automation
 
@@ -152,6 +168,11 @@ Also:
 
 * [PyAutoGUI](https://pypi.python.org/pypi/PyAutoGUI) - A cross-platform module for GUI automation for human beings. Control the keyboard and mouse from a Python script.
 * [ATOMac](https://github.com/pyatom/pyatom) - Python library to fully enable GUI testing of Mac applications via the Apple Accessibility API
+
+## REST API Testing
+* [Rester](https://github.com/chitamoor/rester) - Framework for testing (RESTful) HTTP APIs
+* [pyresttest](https://github.com/svanoort/pyresttest) - A REST testing and API microbenchmarking tool
+* [siesta](http://scastillo.github.com/siesta) - Python REST Client
 
 ## Virtual environments
 
@@ -175,6 +196,7 @@ Also:
 * [Airspeed Velocity](https://github.com/spacetelescope/asv) - A simple Python benchmarking tool with web-based reporting
 * [The Grinder](http://grinder.sourceforge.net/) - Load testing framework that makes it easy to run a distributed test using many load injector machines. This includes common cases such as HTTP web servers, SOAP and REST web services, and application servers (CORBA, RMI, JMS, EJBs), as well as custom protocols. Flexible Scripting Test scripts are written in the powerful Jython and Clojure languages.
 * [Tsung](http://tsung.erlang-projects.org/) - is an open-source multi-protocol distributed load testing tool. It can be used to stress HTTP, WebDAV, SOAP, PostgreSQL, MySQL, LDAP and Jabber/XMPP servers.
+* [taurus](http://gettaurus.org) - Automation-friendly framework for Continuous Testing
 
 ## Security checking
 
@@ -217,6 +239,7 @@ Libraries that may help you to build better test automation.
 * [fabric](http://www.fabfile.org/) - A Python library and command-line tool for streamlining the use of SSH for application deployment or systems administration tasks.
 * [BeautifulSoup](http://www.crummy.com/software/BeautifulSoup/) - Package for parsing HTML documents (including having malformed markup, i.e. non-closed tags, so named after Tag soup). It creates a parse tree for parsed pages that can be used to extract data from HTML, which is useful for web scraping.
 * [Soupy](https://github.com/ChrisBeaumont/soupy) - It is a wrapper around BeautifulSoup that makes it easier to build complex queries when wrangling web data.
+* [PyQuery](https://pythonhosted.org/pyquery/) - Pyquery allows you to make jquery queries on xml documents. The API is as much as possible the similar to jquery. pyquery uses lxml for fast xml and html manipulation.
 * [waiting](https://github.com/vmalloc/waiting) - python utility library for waiting for predicates.
 * [Comcast](https://github.com/tylertreat/Comcast/) - simulating shitty network connections so you can build better systems.
 * [dateutil](https://pypi.python.org/pypi/python-dateutil) - Extensions to the standard Python datetime module.
@@ -225,9 +248,11 @@ Libraries that may help you to build better test automation.
 * [fig](http://www.fig.sh/) - Fast, isolated development environments using [Docker](https://www.docker.com/).
 * [gitapi](http://bitbucket.org/haard/gitapi) - Pure-Python API for git.
 * [Pyro4](https://github.com/irmen/Pyro4) - Pyro enables you to build applications in which objects can talk to each other over the network, with minimal programming effort.
+* [keyboard](https://github.com/boppreh/keyboard) - Hook and simulate global keyboard events on Windows and Linux.
 
 # Resources
 Where to discover new libraries, information, tools, etc.
+* [python books](https://github.com/Junnplus/awesome-python-books)
 
 ## Websites
 
@@ -243,6 +268,13 @@ Where to discover new libraries, information, tools, etc.
 * [php test automation](https://github.com/atinfo/awesome-test-automation/blob/master/php-test-automation.md)
 * [javascript test automation](https://github.com/atinfo/awesome-test-automation/blob/master/javascript-test-automation.md)
 * [test automation and software testing as services](https://github.com/atinfo/awesome-test-automation/blob/master/automation-and-testing-as-service.md)
+* [mobile, tablet and tv test automation](https://github.com/atinfo/awesome-test-automation/blob/master/mobile-test-automation.md)
+* [general purpose test automation tools](https://github.com/atinfo/awesome-test-automation/blob/master/general-purpose-test-automation-tools.md)
+
+Also we are supporting and looking for contribution for project:
+
+* [practical test automation by examples](https://github.com/atinfo/at.info-knowledge-base)
+
 
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
 Your contributions are always welcome!

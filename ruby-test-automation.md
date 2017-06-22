@@ -1,6 +1,6 @@
 # Ruby test automation
 
-A comprehensive curated list of Ruby test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on Ruby.
+A comprehensive curated list of Ruby test automation frameworks, tools, libraries and software to help software engineers easily bootstrap test automation on Ruby. Sponsored by http://sdclabs.com
 
 [![Have questions\issues\problems, join the chat at https://gitter.im/atinfo/awesome-test-automation](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/atinfo/awesome-test-automation)
 
@@ -26,7 +26,7 @@ Table of content:
 
 Also:
 - [Resources](#resources)
-- [Other Awesome Test Automation Lists](#other-awesome-lists)
+- [Other Awesome Test Automation Lists](#other-awesome-test-automation-lists)
 - [Contributing](#contributing)
 
 ---
@@ -35,6 +35,7 @@ Also:
 
 * [Test::Unit](http://ruby-doc.org//stdlib-2.1.5//libdoc/test/unit/rdoc/Test/Unit.html) - is intended for unit testing and comes bundled with Ruby.
 * [MiniTest](https://github.com/CapnKernul/minitest-reporters#readme) - becomes available on attaching the minitest-reporters gem. The minitests are added to the Test::Unit framework.
+* [yard-doctest](https://github.com/p0deje/yard-doctest) - allows to use YARD examples as tests
 
 ## TDD \ ATDD \ BDD
 - TDD
@@ -52,6 +53,7 @@ Also:
     * [ActiveMocker](https://github.com/zeisler/active_mocker) - Generate mocks from ActiveRecord models for unit tests that run fast because they don’t need to load Rails or a database.
     * [TestXml](https://github.com/alovak/test_xml) - TestXml is a small extension for testing XML/HTML.
     * [WebMock](https://github.com/bblimke/webmock) - Library for stubbing and setting expectations on HTTP requests.
+    * [vcr](https://github.com/vcr/vcr) - Record your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.
 - Extensions
     * [Cutest](https://github.com/djanowski/cutest) - Isolated tests in Ruby. Each test file is run in a forked process to avoid shared state. Once a failure is found, you get a report detailing what failed and how to locate the error and the rest of the file is skipped.
     * [Spork](https://github.com/sporkrb/spork) - A DRb server for testing frameworks (RSpec / Cucumber currently).
@@ -74,26 +76,29 @@ Also:
 
 ## Web UI test automation
 
-- Libraries
+- libraries
     * [Selenium WebDriver](http://selenium.googlecode.com/git/docs/api/rb/index.html) - This gem provides Ruby bindings for WebDriver.
     * [API Taster](https://github.com/fredwu/api_taster) - A quick and easy way to visually test your Rails application's API.
     * [Watir](https://github.com/watir/watir/) - Web application testing in Ruby.
     * [Watir-webdriver](http://watirwebdriver.com/) - The most elegant way to use WebDriver with ruby.
     * [Poltergeist](https://github.com/teampoltergeist/poltergeist) - Poltergeist is a driver for Capybara. It allows you to run your Capybara tests on a headless WebKit browser, provided by PhantomJS.
     * [PhantomJS](http://phantomjs.org/) - is a headless WebKit scriptable with a JavaScript API. It has fast and native support for various web standards: DOM handling, CSS selector, JSON, Canvas, and SVG.
-- Frameworks
+    * [unobtainium](https://github.com/jfinkhaeuser/unobtainium) - configuration driven wrapper for Selenium WebDriver and [appium](http://appium.io/), with PhantomJS support.
+- frameworks
     * [Capybara](http://jnicklas.github.io/capybara) - Acceptance test framework for web applications.
     * [Konacha](https://github.com/jfirebaugh/konacha) - Test your Rails application's JavaScript with the mocha test framework and chai assertion library.
     * [chemistrykit](https://github.com/chemistrykit/chemistrykit) - Simple and opinionated web testing framework for Selenium WebDriver that follows convention over configuration and integrates with SauceLabs for cross-browser execution in the cloud.
     * [howitzer](https://github.com/strongqa/howitzer) - is a Ruby-based framework for acceptance testing. It was originally developed for testing web applications, but you can also use it for API testing and web service testing.The framework was built with modern patterns, techniques, and tools in automated testing.
-- Page Objects
+- page objects
     * [page-object](https://github.com/cheezy/page-object) - Gem to implement PageObject pattern in watir-webdriver and selenium-webdriver.
     * [watirsome](https://github.com/p0deje/watirsome) - Awesome page objects with Watir.
     * [widgeon](https://github.com/yashaka/widgeon) - Yet another 'page objects for Capybara' gem with ability to create custom loadable elements akka 'widgets'
+- extensions
+    * [Selenium-Grid-Extras](https://github.com/groupon/Selenium-Grid-Extras) - Simplify the managment of the Selenium Grid Nodes and stabilize said nodes by cleaning up the test environment after the build has been completed
 
 ## Mobile test automation
 
-[Contribute to this section](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
+* [Calabash](http://calaba.sh/) - Calabash enables you to write and execute automated acceptance tests on mobile apps. It's cross-platform, supporting Android and iOS native apps. 
 
 ## Windows UI test automation
 
@@ -122,7 +127,7 @@ Also:
 
 ## Continuous Integration
 
-[Contribute to this section](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
+* [Knapsack](https://github.com/ArturT/knapsack) - Optimal test suite parallelisation across CI nodes for RSpec, Cucumber, Minitest, Spinach and Turnip.
 
 ## Reporting
 
@@ -140,7 +145,7 @@ Also:
 
 * [parallel_tests](https://github.com/grosser/parallel_tests) - Speedup Test::Unit + RSpec + Cucumber by running parallel on multiple CPUs (or cores). ParallelTests splits tests into even groups(by number of tests or runtime) and runs each group in a single process with its own database.
 * [headless](https://github.com/leonid-shevtsov/headless) - Is the Ruby interface for Xvfb. It allows you to create a headless display straight from Ruby code, hiding some low-level action. It can also capture images and video from the virtual framebuffer.  
-* [watir-jquery](https://github.com/eugene-tkachenko/watir-jquery) - Watir-jquery gem allows you to use the jQuery syntax to find page elements and returns Watir-object type (e.x. "#<Watir::Div:0x..").
+* [watir-jquery](https://github.com/eugene-tkachenko/watir-jquery) - Watir-jquery gem allows you to use the jQuery syntax to find page elements and returns Watir-object type.
 
 
 # Resources
@@ -160,6 +165,13 @@ Where to discover new libraries, information, tools, etc.
 * [php test automation](https://github.com/atinfo/awesome-test-automation/blob/master/php-test-automation.md)
 * [javascript test automation](https://github.com/atinfo/awesome-test-automation/blob/master/javascript-test-automation.md)
 * [test automation and software testing as services](https://github.com/atinfo/awesome-test-automation/blob/master/automation-and-testing-as-service.md)
+* [mobile, tablet and tv test automation](https://github.com/atinfo/awesome-test-automation/blob/master/mobile-test-automation.md)
+* [general purpose test automation tools](https://github.com/atinfo/awesome-test-automation/blob/master/general-purpose-test-automation-tools.md)
+
+Also we are supporting and looking for contribution for project:
+
+* [practical test automation by examples](https://github.com/atinfo/at.info-knowledge-base)
+
 
 # [Contributing](https://github.com/atinfo/awesome-test-automation/blob/master/CONTRIBUTING.md)
 Your contributions are always welcome!
